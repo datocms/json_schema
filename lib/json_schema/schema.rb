@@ -186,6 +186,7 @@ module JsonSchema
     attr_schema :rel
     attr_schema :schema
     attr_schema :target_schema, :schema_name => :targetSchema
+    attr_schema :job_schema, :schema_name => :jobSchema
 
     # allow booleans to be access with question mark
     alias :additional_items? :additional_items

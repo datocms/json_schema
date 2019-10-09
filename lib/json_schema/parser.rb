@@ -215,6 +215,11 @@ module JsonSchema
               parse_data(l["targetSchema"], schema, "links/#{i}/targetSchema")
           end
 
+          if l["jobSchema"]
+            link.job_schema =
+              parse_data(l["jobSchema"], schema, "links/#{i}/jobSchema")
+          end
+
           link
         }
       end

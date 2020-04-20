@@ -319,6 +319,7 @@ module JsonSchema
         schema.links.each { |l|
           yield l.schema if l.schema
           yield l.target_schema if l.target_schema
+          yield l.job_schema if l.job_schema
         }
       end
     end

@@ -123,6 +123,13 @@ describe JsonSchema::ReferenceExpander do
     assert_equal ["string"], schema.type
   end
 
+  it "will expand hyperschema link jobSchemas" do
+    expand
+    assert_equal [], error_messages
+    schema = @schema.properties["app"].links[0].job_schema.properties["name"]
+    assert_equal ["string"], schema.type
+  end
+
   it "will perform multiple passes to resolve all references" do
     pointer("#/properties").merge!(
       "app0" => { "$ref" => "#/properties/app1" },

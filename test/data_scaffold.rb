@@ -216,6 +216,9 @@ module DataScaffold
             },
             "targetSchema" => {
               "$ref" => "#/definitions/app"
+            },
+            "jobSchema" => {
+              "$ref" => "#/definitions/app"
             }
           ],
           "media" => {

@@ -192,6 +192,9 @@ describe JsonSchema::Parser do
         },
         "targetSchema" => {
           "$ref" => "#/definitions/app"
+        },
+        "JobSchema" => {
+          "$ref" => "#/definitions/app"
         }
       ]
     )

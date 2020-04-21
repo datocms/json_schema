@@ -1,5 +1,12 @@
 Unreleased
 
+0.20.9 2020-04-21
+  Fix: Expand references to jobSchema too
+
+0.20.8 2019-10-09
+  Forked from upstream repo
+  Add jobSchema
+
 0.20.8 2019-09-12
 	Remove filename check on executable to allow run with Rbenv (#119)
 
